@@ -8,6 +8,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,5 +23,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Initialize Firebase Realtime Database
+        FirebaseDatabase database = FirebaseDatabase.getInstance(BuildConfig.DATABASE_URL);
+        DatabaseReference myRef = database.getReference("message_by_ushan");
+
+        // Write data to Firebase Realtime Database
+        myRef.setValue("Hello, Firebase!");
+
     }
 }
