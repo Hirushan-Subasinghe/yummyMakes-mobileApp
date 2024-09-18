@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MobileApp"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
@@ -20,7 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".BookmarkActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".AddReciepeActivity"
             android:exported="false" />
@@ -35,9 +38,6 @@
             android:exported="false" />
         <activity
             android:name=".CreateAccountActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".WelcomeActivity"
