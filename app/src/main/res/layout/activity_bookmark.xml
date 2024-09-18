@@ -1,10 +1,501 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".BookmarkActivity">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".BookmarkActivity">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toStartOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_ico" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Book Marks"
+            android:textColor="#FF7F53"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="389dp"
+            android:layout_height="149dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/food_9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cherry Delight"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Italian Ingredients" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/sample_user_1_ico" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Samantha Uncle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/clock_ico" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1h" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/user_small_ico" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/review_star_filled_ico" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4.5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="394dp"
+            android:layout_height="156dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/food_5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fried Rice - Indian"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Italian Ingredients" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/sample_user_1_ico" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="147dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Samantha Uncle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/clock_ico" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1h" />
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/user_small_ico" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2" />
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/review_star_filled_ico" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4.5" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="394dp"
+            android:layout_height="156dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/food_8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blueberry Smoothie"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Italian Ingredients" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/sample_user_1_ico" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="147dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Samantha Uncle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/clock_ico" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1h" />
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/user_small_ico" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2" />
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/review_star_filled_ico" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4.5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="394dp"
+            android:layout_height="156dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/food_7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bread Toast"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Italian Ingredients" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/sample_user_1_ico" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="147dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Samantha Uncle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/clock_ico" />
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1h" />
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/user_small_ico" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2" />
+
+                    <ImageView
+                        android:id="@+id/imageView28"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/review_star_filled_ico" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4.5" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
