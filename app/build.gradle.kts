@@ -77,4 +77,7 @@ dependencies {
     implementation ("com.google.firebase:firebase-auth")
     implementation ("com.google.firebase:firebase-storage:20.2.0")
     // add dependencies for firbase - IM/2021/089 --stop
+
+    //dependency for carousel image viewer
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 }
