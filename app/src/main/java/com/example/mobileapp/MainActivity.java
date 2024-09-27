@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Initialize Firebase Realtime Database
-        FirebaseDatabase database = FirebaseDatabase.getInstance(BuildConfig.DATABASE_URL);
-        DatabaseReference myRef = database.getReference("message_by_ushan");
+//        FirebaseDatabase database = FirebaseDatabase.getInstance(BuildConfig.DATABASE_URL);
+//        DatabaseReference myRef = database.getReference("message_by_ushan");
 
         // Write data to Firebase Realtime Database
-        myRef.setValue("Hello, Firebase!");
+//        myRef.setValue("Hello, Firebase!");
 
     }
 }
