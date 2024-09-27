@@ -25,7 +25,7 @@ public class HomeActivity extends AppCompatActivity {
             return insets;
         });
 
-        recyclerView = (RecyclerView)findViewById(R.id.rv);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView = (RecyclerView)findViewById(R.id.rv);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }
