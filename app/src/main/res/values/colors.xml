@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="yummy_orange">#FF7F53</color>
+    <color name="yummy_orange_pressed">#FB7546</color>
+    <color name="yummy_input_field">#F1F4FF</color>
+    <color name="yummy_input_field_hint">#626262</color>
+    <color name="yummy_btn_pressed">#EFD0C9</color>
+    <color name="yummy_btn_menu_fill">#E3E3E3</color>
+    <color name="yummy_btn_menu_outline">#CECECE</color>
+    <color name="yummy_btn_menu_outline_active">#E94B15</color>
+    <color name="yummy_btn_menu_text_color">#0F0F0F</color>
+    <color name="yummy_nav_footer">#D9D9D9</color>
+    <color name="yummy_icon_holder">#EDEDED</color>
+    <color name="snow_white">#FFFAFA</color>
 </resources>
