@@ -33,7 +33,7 @@
                 android:foregroundGravity="left"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/back_ico" />
+                app:srcCompat="@drawable/back_icon" />
 
             <TextView
                 android:id="@+id/textView2"
