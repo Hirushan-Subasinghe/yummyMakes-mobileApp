@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,3 +8,404 @@
     tools:context=".AddReciepeActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+    <?xml version="1.0" encoding="utf-8"?>
+     IM/2021/034 - Pulindu
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddReciepeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="254dp">
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="248dp"
+            android:layout_height="54dp"
+            android:fontFamily="@font/inter_18pt_bold"
+            android:text="Add Recipe"
+            android:textColor="#FF7F53"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="259dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="#F1F4FF"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="text"
+                android:paddingStart="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="#F1F4FF"
+                android:ems="10"
+                android:hint="Number of servings"
+                android:inputType="text"
+                android:paddingStart="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="#F1F4FF"
+                android:ems="10"
+                android:hint="Estimated time"
+                android:inputType="text"
+                android:paddingStart="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="#F1F4FF"
+                android:ems="10"
+                android:hint="Origin"
+                android:inputType="text"
+                android:paddingStart="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:text="Ingredients"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="48dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_add_ingredients"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_add_ingredients"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:text="TextView" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/minus_circular_button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_add_ingredients"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_add_ingredients"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:text="TextView" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/minus_circular_button" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <EditText
+                android:id="@+id/editTextText7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_add_ingredients"
+                android:ems="10"
+                android:hint="Ingredient"
+                android:inputType="text"
+                android:paddingStart="8dp" />
+
+            <EditText
+                android:id="@+id/editTextText6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_add_ingredients"
+                android:ems="10"
+                android:hint="Quantity"
+                android:inputType="text"
+                android:paddingStart="8dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="156dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:src="@drawable/round_add_button" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="151dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:text="Images"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="151dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="30dp"
+            android:text="How to make"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText2">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="28dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF7F53"
+                android:fontFamily="@font/inter_18pt_bold"
+                android:text="Add Recipe"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="152dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="28dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF7F53"
+                android:fontFamily="@font/inter_18pt_bold"
+                android:text="Reset"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="0dp"
+            android:layout_height="146dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="30dp"
+            android:background="#F1F4FF"
+            android:ems="10"
+            android:hint="text"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textColor="#626262"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="0dp"
+            android:layout_height="157dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="30dp"
+            android:background="#F1F4FF"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="52dp"
+                    android:layout_height="101dp"
+                    android:text="+"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.123"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.706" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="186dp"
+                    android:layout_height="114dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_18pt_bold"
+            android:text="Basic Information"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="65dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white"
+            android:scaleX="0.7"
+            android:scaleY="0.7"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

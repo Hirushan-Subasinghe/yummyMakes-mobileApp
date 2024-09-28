@@ -78,13 +78,6 @@ dependencies {
     implementation ("com.google.firebase:firebase-storage:20.2.0")
     // add dependencies for firbase - IM/2021/089 --stop
 
-    //IM/2021/101 - start
+    //dependency for carousel image viewer
     implementation("com.github.bumptech.glide:glide:4.16.0")
-    implementation("androidx.recyclerview:recyclerview:1.3.1")
-
-    //IM/2021/101 - end
-
-    implementation("androidx.media3:media3-exoplayer:1.4.1")
-    implementation("androidx.media3:media3-exoplayer-dash:1.4.1")
-    implementation("androidx.media3:media3-ui:1.4.1")
 }
