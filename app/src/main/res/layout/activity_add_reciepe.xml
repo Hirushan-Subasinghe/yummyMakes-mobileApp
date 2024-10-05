@@ -54,7 +54,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView9">
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/editTextName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -67,7 +67,7 @@
                 android:paddingStart="10dp" />
 
             <EditText
-                android:id="@+id/editTextText4"
+                android:id="@+id/editTextServings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -80,7 +80,7 @@
                 android:paddingStart="10dp" />
 
             <EditText
-                android:id="@+id/editTextText3"
+                android:id="@+id/editTextTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -93,7 +93,7 @@
                 android:paddingStart="10dp" />
 
             <EditText
-                android:id="@+id/editTextText5"
+                android:id="@+id/editTextOrigin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -123,104 +123,20 @@
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="0dp"
-            android:layout_height="83dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="@+id/textView9"
             app:layout_constraintStart_toStartOf="@+id/textView9"
             app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginBottom="8dp"
-                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_add_ingredients"
-                    android:fontFamily="@font/inter_18pt_medium"
-                    android:gravity="center_vertical"
-                    android:paddingStart="8dp"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_add_ingredients"
-                    android:fontFamily="@font/inter_18pt_medium"
-                    android:gravity="center_vertical"
-                    android:paddingStart="8dp"
-                    android:text="TextView" />
-
-                <ImageButton
-                    android:id="@+id/imageButton3"
-                    android:layout_width="8dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/white"
-                    android:scaleType="fitCenter"
-                    android:scaleX="0.7"
-                    android:scaleY="0.7"
-                    android:src="@drawable/minus_circular_button" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginBottom="8dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_add_ingredients"
-                    android:fontFamily="@font/inter_18pt_medium"
-                    android:gravity="center_vertical"
-                    android:paddingStart="8dp"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_add_ingredients"
-                    android:fontFamily="@font/inter_18pt_medium"
-                    android:gravity="center_vertical"
-                    android:paddingStart="8dp"
-                    android:text="TextView" />
-
-                <ImageButton
-                    android:id="@+id/imageButton4"
-                    android:layout_width="8dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/white"
-                    android:scaleType="fitCenter"
-                    android:scaleX="0.7"
-                    android:scaleY="0.7"
-                    android:src="@drawable/minus_circular_button" />
-
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearLayout3"
             android:layout_width="0dp"
-            android:layout_height="23dp"
+            android:layout_height="30dp"
             android:layout_marginTop="20dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="@+id/textView9"
@@ -228,7 +144,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
             <EditText
-                android:id="@+id/editTextText7"
+                android:id="@+id/editTextIngredient"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="8dp"
@@ -241,7 +157,7 @@
                 android:paddingStart="8dp" />
 
             <EditText
-                android:id="@+id/editTextText6"
+                android:id="@+id/editTextQuantity"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="8dp"
@@ -255,14 +171,13 @@
 
             <ImageButton
                 android:id="@+id/imageButton5"
-                android:layout_width="156dp"
+                android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:background="@color/white"
                 android:scaleType="fitCenter"
-                android:scaleX="0.7"
+                android:src="@drawable/round_add_button"
                 android:scaleY="0.7"
-                android:src="@drawable/round_add_button" />
+                android:scaleX="0.7"/>
 
         </LinearLayout>
 
@@ -270,7 +185,6 @@
             android:id="@+id/textView3"
             android:layout_width="151dp"
             android:layout_height="24dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/inter_18pt_bold"
             android:text="Images"
@@ -279,6 +193,19 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/textView9"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="151dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/inter_18pt_bold"
+            android:text="Video"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
         <TextView
             android:id="@+id/textView4"
@@ -292,16 +219,16 @@
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/textView9"
-            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="56dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="196dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="@+id/textView9"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/textView9"
             app:layout_constraintTop_toBottomOf="@+id/frameLayout">
 
@@ -310,11 +237,11 @@
                 android:layout_width="147dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#FF7F53"
                 android:fontFamily="@font/inter_18pt_bold"
                 android:text="Add Recipe"
                 android:textColor="#FFFFFF"
-                android:backgroundTint="#FF7F53"
-                app:cornerRadius="10dp"/>
+                app:cornerRadius="10dp" />
 
             <Button
                 android:id="@+id/button3"
@@ -322,11 +249,11 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="20dp"
                 android:layout_weight="1"
+                android:backgroundTint="#FF7F53"
                 android:fontFamily="@font/inter_18pt_bold"
                 android:text="Reset"
                 android:textColor="#FFFFFF"
-                android:backgroundTint="#FF7F53"
-                app:cornerRadius="10dp"/>
+                app:cornerRadius="10dp" />
 
         </LinearLayout>
 
@@ -341,7 +268,7 @@
             android:background="#F1F4FF">
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/editTextMake"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:ems="10"
@@ -375,7 +302,7 @@
                 android:layout_gravity="center_vertical">
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/addImageButton"
                     android:layout_width="65dp"
                     android:layout_height="match_parent"
                     android:text="+"
@@ -429,6 +356,49 @@
             android:background="@color/white"
             android:scaleX="0.7"
             android:scaleY="0.7"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="154dp"
+            android:layout_marginTop="30dp"
+            android:background="#F1F4FF"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addVideoButton"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#D9D9D9"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.123"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.706" />
+
+                <ImageView
+                    android:id="@+id/videoImageView"
+                    android:layout_width="186dp"
+                    android:layout_height="114dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
